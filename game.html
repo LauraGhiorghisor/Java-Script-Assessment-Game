@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo 1</title>
+		<link rel="stylesheet" href="game.css" />
+		<script src="game.js"></script>
+	</head>
+
+	<body>
+		<div class="hud">
+			<ul class="health">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div id="player" class="character stand down">
+			<div class="head">
+			</div>
+
+			<div class="body">
+			</div>
+
+			<div class="weapon bow">
+			</div>
+		</div>
+
+		<div class="enemy grey stand left appear" style="left: 80vw; top: 10vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+		</div>
+	
+ 
+		<div class="enemy grey stand left appear" style="left: 80vw; top: 20vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+	
+		</div>
+
+		 <div class="enemy grey stand left appear" style="left: 80vw; top: 30vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+		</div>
+
+		<div class="enemy grey stand left appear" style="left: 80vw; top: 40vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+		</div>
+
+
+		<div class="enemy grey stand left appear" style="left: 80vw; top: 50vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+		</div>
+
+		<div class="enemy grey stand left appear" style="left: 80vw; top: 60vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+		</div>
+
+		<div class="enemy grey stand left appear" style="left: 80vw; top: 70vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+		</div>
+
+
+		<div class="enemy grey stand left appear" style="left: 80vw; top: 80vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+		</div> 
+
+		<div class="enemy grey stand left appear" style="left: 80vw; top: 90vh">
+			<div class="head">
+			</div>
+
+			<div class="body">
+
+			</div>
+			<div class="weapon bow">
+
+			</div>
+		</div>  
+		 <!-- Winning and losing messages  -->
+		<div class="winningMessage">
+			<p class="message"> congratulations! you win! play more?</p>
+			<p class="score"> score</p>
+			<div>
+			<button class="replayButton">Replay</button>
+			<button class="continueButton">Next Level</button>
+			<button class="settingsButton">Settings</button>		
+			</div>
+		</div>
+		<div class="losingMessage">
+				<p class="message"> you lost. play again?</p>
+				<p class="score"> score</p>
+				<button class="replayButton">Replay</button>
+				<button class="settingsButton">Settings</button>
+		</div>
+
+		<div class="winningMessageGame">
+			<p class="message"> congratulations! you win the game!</p>
+			<p class="score"> score</p>
+			<div>
+			<button class="replayButton">Replay</button>
+			<button class="restartButton">Restart</button>
+			<button class="settingsButton">Settings</button>		
+			</div>
+		</div>
+		<div class="losingMessageGame">
+				<p class="message"> game over </p>
+				<p class="score"> score</p>
+				<div>
+				<button class="replayButton">Replay</button>
+				<button class="restartButton">Restart</button>
+				<button class="settingsButton">Settings</button>
+				</div>
+		</div>	
+		<!-- Help menu -->
+		<div class="about">
+				<p> Developed By Laura Ghiorghisor</p> 
+				<p> Web Development Assignment </p>
+				<p> 2019 </p>
+				<span id="exitAbout">[x]</span>
+				</div>
+		<!-- About menu -->
+		<div class="help">
+				<p>In order to win the game, you must finish 2 levels. each level consists of 9 enemies that can be shot by firing arrows at them.</p>
+				<p> Every level can be played indefinitely, but level2 can only be played upon completing level1. </p>
+				<p>The player has three lives (upper right corner). each time an enemy arrow hits him/her, he/she will lose a life. when all three lives are lost, the respective level is lost. you should avoid enemy arrows in order to increase your chances to complete the level.</p>
+				<p>The player can move up, down, right, left or diagonally across the screen by using the arrow keys. </p>
+				<p>In order to fire, press space. </p>
+				<p>To change the player, click on it to access the menu.</p>
+				<p>To turn sound on/off, click on the speaker icon. </p>
+				<span id="exitHelp">[x]</span>
+			</div>
+		<img src="images/tree.png" class="tree blocking" />
+		<img src="images/tree.png" class="tree blocking" style="left: 700px; top: 200px" />
+		<img src="images/tree.png" class="tree blocking" style="left: 250px; top: 50px" />
+		<img src="images/tree.png" class="tree blocking" style="left: 900px; top: 450px" />
+		<img src="images/tree.png" class="tree blocking" style="left: 500px; top: 500px" />
+		<img src="images/tree.png" class="tree blocking" style="left: 200px; top: 800px" />
+		<img src="images/tree.png" class="tree blocking" style="left: 900px; top: 800px" />
+
+		<div class="trees blocking" style="background-image: url(images/tree.png); width: 200px; height: 100vh; float: right">
+
+		</div>
+
+		<!-- Aside element for settings -->
+		<aside>
+			<a id="closeside">X</a>
+
+			<p>Select Head</p>
+			<ul class="heads">
+				<li id="head0"></li>
+				<li id="head1"></li>
+				<li id="head2"></li>
+				<li id="head3"></li>
+				<li id="head4"></li>
+			</ul>
+
+			<p>Select body</p>
+			<ul class="bodies">
+				<li id="body0"></li>
+				<li id="body1"></li>
+				<li id="body2"></li>
+				<li id="body3"></li>
+				<li id="body4"></li>
+			</ul>
+			<!-- Audio element -->
+			<audio controls>
+					<source src="sound.mp3" type="audio/ogg">
+					
+					Your browser does not support the audio tag.
+				  </audio>
+			<p>Select Music</p>
+			<p id="sound"></p>
+			<p id="about">About</p>
+			<p id="help">Help</p>
+		
+		</aside>
+
+	</body>
+</html>
